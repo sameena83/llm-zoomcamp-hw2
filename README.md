@@ -37,21 +37,30 @@ Traditional text-based search using exact token matching.
 We combine vector and keyword search results using Reciprocal Rank Fusion (RRF) to improve relevance.
 
 ⚙️ Tech Stack
-Python 🐍
+Python 
 NumPy
 ONNX Runtime
 Tokenizers
 minsearch
 gitsource (for loading course data)
 HuggingFace Hub
+
 📂 Project Structure
+
 llm-zoomcamp-hw2/
+
 │
-├── download.py              # Downloads ONNX embedding model
-├── embedder.py              # Embedder class for encoding text
-├── notebook.ipynb          # Main solution notebook
-├── data/                   # Cached lesson documents (if any)
+├── download.py 
+
+├── embedder.py          
+
+├── hw_2.ipynb   
+
+├── ingest.py/      
+
 └── README.md
+
+
 🔍 What This Project Covers
 ✔️ Q1 – Query Embedding
 
@@ -89,6 +98,9 @@ uv add --dev huggingface-hub jupyter
 python download.py
 4. Run notebook
 jupyter notebook
+
+
+
 📊 Results
 
 This project demonstrates how:
@@ -96,6 +108,8 @@ This project demonstrates how:
 Semantic search improves retrieval over keyword matching
 Chunking significantly boosts embedding quality
 Hybrid search (RRF) combines strengths of both methods
+
+
 
 🙌 Acknowledgements
 DataTalksClub for the LLM Zoomcamp
